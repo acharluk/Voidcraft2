@@ -7,4 +7,6 @@ import cpw.mods.fml.common.Mod;
  */
 @Mod(modid = "voidcraft2")
 public class VC2 {
+    @Mod.Instance
+    public static VC2 instance;
 }
