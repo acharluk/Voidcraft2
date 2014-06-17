@@ -12,4 +12,6 @@ public class Strings {
     public static final String COMMONPROXYLOC = MODID + ".proxy.CommonProxy";
     public static final String CLIENTPROXYLOC = MODID + ".proxy.ClientProxy";
 
+    public static final String RESOURCESPREFIX = MODID.toLowerCase() + ":";
+
 }
