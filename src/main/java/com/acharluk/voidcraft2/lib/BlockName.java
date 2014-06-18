@@ -5,6 +5,7 @@ package com.acharluk.voidcraft2.lib;
  */
 public class BlockName {
 
-    public static final String void_ore = "Void Ore";
+    public static final String voidOre = "void_ore";
 
+    public static final String voidBlock = "void_block";
 }
