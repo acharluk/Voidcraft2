@@ -28,7 +28,7 @@ public class VC2 {
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent e) {
-
+        //TODO Event Manager -> Create ore in The End
     }
 
     @Mod.EventHandler
