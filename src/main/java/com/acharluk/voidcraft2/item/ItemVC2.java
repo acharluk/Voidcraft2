@@ -1,5 +1,6 @@
 package com.acharluk.voidcraft2.item;
 
+import com.acharluk.voidcraft2.VC2;
 import com.acharluk.voidcraft2.lib.Strings;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -12,6 +13,10 @@ import net.minecraft.item.ItemStack;
  * Created by ACharLuk on 18/06/2014.
  */
 public class ItemVC2 extends Item {
+
+    public ItemVC2(){
+        this.setCreativeTab(VC2.getCreativeTabItem());
+    }
 
     public String getUnwrappedUnlocalizedName(String unlocalizedName) {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);

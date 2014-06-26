@@ -1,5 +1,6 @@
 package com.acharluk.voidcraft2.block;
 
+import com.acharluk.voidcraft2.VC2;
 import com.acharluk.voidcraft2.lib.Strings;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -11,8 +12,11 @@ import net.minecraft.client.renderer.texture.IIconRegister;
  */
 public class BlockVC2 extends Block {
 
+
+
     public BlockVC2() {
         super(Material.rock);
+        this.setCreativeTab(VC2.getCreativeTabBlock());
     }
     public BlockVC2(Material material) {
         super(material);
