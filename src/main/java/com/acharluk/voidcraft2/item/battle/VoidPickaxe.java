@@ -1,7 +1,5 @@
 package com.acharluk.voidcraft2.item.battle;
 
-import com.acharluk.voidcraft2.VC2;
-import com.acharluk.voidcraft2.lib.ItemName;
 import com.acharluk.voidcraft2.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
