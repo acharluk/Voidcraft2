@@ -1,5 +1,6 @@
 package com.acharluk.voidcraft2.item.battle;
 
+import com.acharluk.voidcraft2.item.ItemVC2;
 import com.acharluk.voidcraft2.lib.Strings;
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.relauncher.Side;
@@ -8,19 +9,18 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.ItemHoe;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.UseHoeEvent;
 
 /**
- * Created by ACharLuk on 23/06/2014.
+ * Created by ACharLuk on 15/07/2014.
  */
-public class VoidHoe extends ItemHoe {
-
-    public VoidHoe(ToolMaterial toolMaterial) {
-        super(toolMaterial);
+public class VoidSickle extends ItemVC2 {
+    public VoidSickle() {
+        super();
     }
 
     public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10)
@@ -45,9 +45,9 @@ public class VoidHoe extends ItemHoe {
 
             Block block = par3World.getBlock(par4, par5, par6);
 
-            if (par7 != 0 && par3World.getBlock(par4, par5 + 1, par6).isAir(par3World, par4, par5 + 1, par6) && (block == Blocks.grass || block == Blocks.dirt))
+            if (par7 != 0 && par3World.getBlock(par4, par5 + 1, par6).isAir(par3World, par4, par5 + 1, par6) && (block == Blocks.double_plant || block == Blocks.tallgrass))
             {
-                Block block1 = Blocks.farmland;
+                Block block1 = Blocks.air;
                 par3World.playSoundEffect((double)((float)par4 + 0.5F), (double)((float)par5 + 0.5F), (double)((float)par6 + 0.5F), block1.stepSound.getStepResourcePath(), (block1.stepSound.getVolume() + 1.0F) / 2.0F, block1.stepSound.getPitch() * 0.8F);
 
                 if (par3World.isRemote)
@@ -61,14 +61,10 @@ public class VoidHoe extends ItemHoe {
                             int nx = par4 + x;
                             int nz = par6 + z;
                             Block targetBlock = par3World.getBlock(nx, par5, nz);
-                            if(targetBlock == Blocks.reeds || targetBlock == Blocks.grass) {
-                                if(par3World.getBlock(nx, par5 + 1, nz).isAir(par3World, nx, par5 + 1, nz)) {
+                            if(targetBlock == Blocks.tallgrass || targetBlock == Blocks.double_plant ) {
                                     par3World.setBlock(nx, par5, nz, block1);
-                                } else {
-                                    //System.out.println("Block at " + nx + "," + par5 + 1 + "," + nz + " is not air!");
-                                }
                             } else {
-                                //System.out.println("Block " + block + "at " + nx + "," + par5 + "," + nz + " is not dirt!");
+                                //System.out.println("Block " + block + "at " + nx + "," + par5 + "," + nz + " is not tallGrass!");
                             }
                         }
                     }
@@ -88,4 +84,5 @@ public class VoidHoe extends ItemHoe {
     public void registerIcons(IIconRegister iconRegister) {
         this.itemIcon = iconRegister.registerIcon(Strings.RESOURCESPREFIX + (super.getUnlocalizedName().substring(5)));
     }
+
 }

@@ -15,7 +15,7 @@ public class BlockVC2 extends Block {
 
 
     public BlockVC2() {
-        super(Material.rock);
+        super(Material.ground);
         this.setCreativeTab(VC2.getCreativeTabBlock());
     }
     public BlockVC2(Material material) {

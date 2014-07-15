@@ -22,6 +22,7 @@ public class VItem {
     public static Item voidShovel;
     public static Item voidAxe;
     public static Item voidHoe;
+    public static Item voidSickle;
 
 
     public static void init() {
@@ -34,6 +35,7 @@ public class VItem {
         voidShovel = new VoidShovel(VItem.VOID).setUnlocalizedName(Names.Items.voidShovel).setCreativeTab(VC2.getCreativeTabBattle());
         voidAxe = new VoidAxe(VItem.VOID).setUnlocalizedName(Names.Items.voidAxe).setCreativeTab(VC2.getCreativeTabBattle());
         voidHoe = new VoidHoe(VItem.VOID).setUnlocalizedName(Names.Items.voidHoe).setCreativeTab(VC2.getCreativeTabBattle());
+        voidSickle = new VoidSickle().setUnlocalizedName(Names.Items.voidSickle).setCreativeTab(VC2.getCreativeTabBattle());
 
         registerItems();
     }
@@ -44,6 +46,7 @@ public class VItem {
         GameRegistry.registerItem(voidShovel, voidShovel.getUnlocalizedName());
         GameRegistry.registerItem(voidAxe, voidAxe.getUnlocalizedName());
         GameRegistry.registerItem(voidHoe, voidHoe.getUnlocalizedName());
+        GameRegistry.registerItem(voidSickle, voidSickle.getUnlocalizedName());
     }
 
 }

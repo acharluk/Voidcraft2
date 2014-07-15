@@ -23,7 +23,7 @@ public class Names {
         public static final String voidShovel = "void_shovel";
         public static final String voidAxe = "void_axe";
         public static final String voidHoe = "void_hoe";
-
+        public static final String voidSickle = "void_sickle";
     }
 
 }
