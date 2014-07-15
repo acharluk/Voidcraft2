@@ -61,7 +61,7 @@ public class VoidHoe extends ItemHoe {
                             int nx = par4 + x;
                             int nz = par6 + z;
                             Block targetBlock = par3World.getBlock(nx, par5, nz);
-                            if(targetBlock == Blocks.reeds || targetBlock == Blocks.grass) {
+                            if(targetBlock == Blocks.dirt || targetBlock == Blocks.grass) {
                                 if(par3World.getBlock(nx, par5 + 1, nz).isAir(par3World, nx, par5 + 1, nz)) {
                                     par3World.setBlock(nx, par5, nz, block1);
                                 } else {
