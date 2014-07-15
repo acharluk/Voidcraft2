@@ -1,6 +1,5 @@
 package com.acharluk.voidcraft2.item.battle;
 
-import com.acharluk.voidcraft2.item.ItemVC2;
 import com.acharluk.voidcraft2.lib.Strings;
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.relauncher.Side;
@@ -9,7 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,9 +17,9 @@ import net.minecraftforge.event.entity.player.UseHoeEvent;
 /**
  * Created by ACharLuk on 15/07/2014.
  */
-public class VoidSickle extends ItemVC2 {
-    public VoidSickle() {
-        super();
+public class VoidSickle extends ItemHoe {
+    public VoidSickle(ToolMaterial toolMaterial) {
+        super(toolMaterial);
     }
 
     public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10)
