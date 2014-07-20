@@ -1,0 +1,21 @@
+[
+{
+  "modid": "voidcraft2",
+  "name": "Voidcraft 2",
+  "description": "Voidcraft 2",
+  "version": "2.0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "ACharLuk"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

@@ -35,7 +35,7 @@ public class ItemVC2 extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(Strings.RESOURCESPREFIX + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        this.itemIcon = iconRegister.registerIcon(Strings.TEXTURELOC + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     public static void register(ItemVC2 item)     {

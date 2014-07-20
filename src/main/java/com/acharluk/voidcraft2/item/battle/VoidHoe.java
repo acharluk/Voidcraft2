@@ -86,6 +86,6 @@ public class VoidHoe extends ItemHoe {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(Strings.RESOURCESPREFIX + (super.getUnlocalizedName().substring(5)));
+        this.itemIcon = iconRegister.registerIcon(Strings.TEXTURELOC + (super.getUnlocalizedName().substring(5)));
     }
 }

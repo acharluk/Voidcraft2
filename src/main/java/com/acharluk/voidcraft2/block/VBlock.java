@@ -7,8 +7,8 @@ import net.minecraft.block.Block;
  */
 public class VBlock {
 
-    public static Block void_ore;
-    public static Block void_block;
+    public static Block void_ore,
+            void_block;
 
     public static void init() {
         void_ore = new VoidOre();

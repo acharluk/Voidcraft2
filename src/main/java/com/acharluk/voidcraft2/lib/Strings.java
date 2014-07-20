@@ -1,5 +1,7 @@
 package com.acharluk.voidcraft2.lib;
 
+import com.acharluk.voidcraft2.util.ConfigurationHandler;
+
 /**
  * Created by ACharLuk on 17/06/2014.
  */
@@ -12,7 +14,10 @@ public class Strings {
 
     public static final String SERVERPROXYLOC = MODPACKAGE + ".proxy.ServerProxy";
     public static final String CLIENTPROXYLOC = MODPACKAGE + ".proxy.ClientProxy";
+    public static final String GUIFACTORYCLASS = MODPACKAGE + ".client.gui.GuiFactory";
 
-    public static final String RESOURCESPREFIX = MODID.toLowerCase() + ":";
+    public static final String RESOURCESPREFIX = MODID + ":";
+
+    public static String TEXTURELOC = ConfigurationHandler.getResourcesPrefix();
 
 }

@@ -33,7 +33,7 @@ public class BlockVC2 extends Block {
 
     @Override
     public void registerBlockIcons(IIconRegister iconRegister) {
-        this.blockIcon = iconRegister.registerIcon(Strings.RESOURCESPREFIX + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        this.blockIcon = iconRegister.registerIcon(Strings.TEXTURELOC + getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     public static void register(BlockVC2 block)

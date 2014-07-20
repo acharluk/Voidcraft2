@@ -2,12 +2,15 @@ package com.acharluk.voidcraft2;
 
 import com.acharluk.voidcraft2.block.VBlock;
 import com.acharluk.voidcraft2.event.VC2Event;
+import com.acharluk.voidcraft2.fluid.VFluid;
 import com.acharluk.voidcraft2.item.VItem;
 import com.acharluk.voidcraft2.lib.Strings;
 import com.acharluk.voidcraft2.proxy.IProxy;
 import com.acharluk.voidcraft2.tab.VoidTabBattle;
 import com.acharluk.voidcraft2.tab.VoidTabBlock;
 import com.acharluk.voidcraft2.tab.VoidTabItem;
+import com.acharluk.voidcraft2.util.BucketHandler;
+import com.acharluk.voidcraft2.util.ConfigurationHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -15,11 +18,12 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 
 /**
  * Created by ACharLuk on 17/06/2014.
  */
-@Mod(modid = Strings.MODID, name = Strings.NAME, version = Strings.VERSION)
+@Mod(modid = Strings.MODID, name = Strings.NAME, version = Strings.VERSION, guiFactory = Strings.GUIFACTORYCLASS)
 public class VC2 {
 
     @Mod.Instance
@@ -46,10 +50,16 @@ public class VC2 {
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent e) {
 
+        ConfigurationHandler.init(e.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         FMLCommonHandler.instance().bus().register(new VC2Event());
-
         VBlock.init();
         VItem.init();
+        //VFluid.init();
+
+        BucketHandler.INSTANCE.buckets.put(VFluid.voidFluidBlock, VItem.voidBucket);
+        MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
+
     }
 
     @Mod.EventHandler
@@ -61,5 +71,4 @@ public class VC2 {
     public static void postInit(FMLPostInitializationEvent e) {
 
     }
-
 }
