@@ -13,8 +13,8 @@ import net.minecraft.client.renderer.texture.IIconRegister;
  * Created by ACharLuk on 23/07/2014.
  */
 public class VoidSlab extends BlockSlab {
-    public VoidSlab(boolean p_i45410_1_, Material p_i45410_2_) {
-        super(p_i45410_1_, p_i45410_2_);
+    public VoidSlab(boolean opaque, Material material) {
+        super(opaque, material);
         this.setBlockName(Names.Blocks.voidSlab);
         this.setCreativeTab(VC2.getCreativeTabBlock());
     }

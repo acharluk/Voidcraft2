@@ -11,6 +11,7 @@ import com.acharluk.voidcraft2.tab.VoidTabBlock;
 import com.acharluk.voidcraft2.tab.VoidTabItem;
 import com.acharluk.voidcraft2.util.BucketHandler;
 import com.acharluk.voidcraft2.util.ConfigurationHandler;
+import com.acharluk.voidcraft2.util.RecipeHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -59,6 +60,8 @@ public class VC2 {
 
         BucketHandler.INSTANCE.buckets.put(VFluid.voidFluidBlock, VItem.voidBucket);
         MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
+
+        RecipeHandler.init();
 
     }
 
