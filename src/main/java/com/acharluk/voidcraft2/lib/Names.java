@@ -9,6 +9,8 @@ public class Names {
 
         public static final String voidOre = "void_ore";
         public static final String voidBlock = "void_block";
+        public static final String voidStairs = "void_stairs";
+        public static final String voidSlab = "void_slab";
     }
 
 

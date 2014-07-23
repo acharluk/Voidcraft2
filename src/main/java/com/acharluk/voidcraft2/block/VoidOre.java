@@ -8,10 +8,10 @@ import com.acharluk.voidcraft2.lib.Names;
 public class VoidOre extends BlockVC2 {
 
     public VoidOre() {
+        super();
         setBlockName(Names.Blocks.voidOre);
         setHardness(5.0F);
         setResistance(0.5F);
-        BlockVC2.register(this);
     }
 
 }

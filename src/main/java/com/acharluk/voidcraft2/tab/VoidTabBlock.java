@@ -13,6 +13,6 @@ public class VoidTabBlock extends CreativeTabs {
     }
     @Override
     public Item getTabIconItem() {
-        return Item.getItemFromBlock(VBlock.void_block);
+        return Item.getItemFromBlock(VBlock.voidBlock);
     }
 }

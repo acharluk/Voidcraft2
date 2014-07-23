@@ -18,6 +18,6 @@ public class Strings {
 
     public static final String RESOURCESPREFIX = MODID + ":";
 
-    public static String TEXTURELOC = ConfigurationHandler.getResourcesPrefix();
+    public static String TEXTURELOC = ConfigurationHandler.getTexturesPrefix();
 
 }

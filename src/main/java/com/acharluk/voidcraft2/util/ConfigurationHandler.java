@@ -37,7 +37,7 @@ public class ConfigurationHandler {
         if (conf.hasChanged()) conf.save();
     }
 
-    public static String getResourcesPrefix() {
+    public static String getTexturesPrefix() {
         if (HDTextures) {
             return Strings.TEXTURELOC = Strings.MODID + "_32x:";
         } else {

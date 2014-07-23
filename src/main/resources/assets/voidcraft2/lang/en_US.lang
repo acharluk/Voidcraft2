@@ -4,6 +4,8 @@ itemGroup.voidcraft2:voidTabBattle=Voidcraft Battle
 
 tile.voidcraft2:void_ore.name=Void Ore
 tile.voidcraft2:void_block.name=Void Block
+tile.void_stairs.name=Void Stairs
+tile.void_slab.name=Void Slab
 
 
 item.voidcraft2:void_ingot.name=Void Ingot
