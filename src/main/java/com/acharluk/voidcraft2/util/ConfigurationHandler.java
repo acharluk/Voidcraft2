@@ -16,6 +16,7 @@ public class ConfigurationHandler {
 
     //Confs
     public static boolean HDTextures = false;
+    public static int OreSpawnMultiplier = 20;
 
     public static void init(File configFile) {
         if (conf == null) {
@@ -33,6 +34,7 @@ public class ConfigurationHandler {
 
     public static void loadConfiguration() {
         HDTextures = conf.getBoolean("HD Textures", Configuration.CATEGORY_GENERAL, false, "Activates 32x textures");
+        OreSpawnMultiplier = conf.getInt("Ore Spawn Multiplier", Configuration.CATEGORY_GENERAL, 20, 1, 100, "Amount of Void Ore spawned");
 
         if (conf.hasChanged()) conf.save();
     }

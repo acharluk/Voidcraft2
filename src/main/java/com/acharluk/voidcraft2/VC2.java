@@ -12,12 +12,14 @@ import com.acharluk.voidcraft2.tab.VoidTabItem;
 import com.acharluk.voidcraft2.util.BucketHandler;
 import com.acharluk.voidcraft2.util.ConfigurationHandler;
 import com.acharluk.voidcraft2.util.RecipeHandler;
+import com.acharluk.voidcraft2.worldgen.EventManager;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -67,7 +69,7 @@ public class VC2 {
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent e) {
-        //TODO Event Manager -> Create ore in The End
+        GameRegistry.registerWorldGenerator(new EventManager(), 0);
     }
 
     @Mod.EventHandler
