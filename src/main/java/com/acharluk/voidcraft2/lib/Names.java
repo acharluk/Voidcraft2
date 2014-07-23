@@ -16,6 +16,7 @@ public class Names {
 
         public static final String voidIngot = "void_ingot";
         public static final String voidShard = "void_shard";
+        public static final String voidStick = "void_stick";
 
 
         public static final String voidSword = "void_sword";

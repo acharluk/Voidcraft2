@@ -32,17 +32,17 @@ public class VC2 {
     @SidedProxy(clientSide = Strings.CLIENTPROXYLOC, serverSide = Strings.SERVERPROXYLOC)
     public static IProxy proxy;
 
-    private static CreativeTabs voidTabBlock = new VoidTabBlock(CreativeTabs.getNextID(), Strings.MODID);
+    private static CreativeTabs voidTabBlock = new VoidTabBlock(CreativeTabs.getNextID(), Strings.MODID + ":" + "voidTabBlock");
     public static CreativeTabs getCreativeTabBlock() {
         return voidTabBlock;
     }
 
-    private static CreativeTabs voidTabItem= new VoidTabItem(CreativeTabs.getNextID(), Strings.MODID);
+    private static CreativeTabs voidTabItem= new VoidTabItem(CreativeTabs.getNextID(), Strings.MODID + ":" + "voidTabItem");
     public static CreativeTabs getCreativeTabItem() {
         return voidTabItem;
     }
 
-    private static CreativeTabs voidTabBattle = new VoidTabBattle(CreativeTabs.getNextID(), Strings.MODID);
+    private static CreativeTabs voidTabBattle = new VoidTabBattle(CreativeTabs.getNextID(), Strings.MODID + ":" + "voidTabBattle");
     public static CreativeTabs getCreativeTabBattle() {
         return voidTabBattle;
     }

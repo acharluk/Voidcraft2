@@ -2,15 +2,17 @@ itemGroup.voidcraft2:voidTabBlock=Voidcraft Blocks
 itemGroup.voidcraft2:voidTabItem=Voidcraft Items
 itemGroup.voidcraft2:voidTabBattle=Voidcraft Battle
 
-voidcraft2:void_ore.name=Void Ore
-voidcraft2:void_block.name=Void Block
+tile.voidcraft2:void_ore.name=Void Ore
+tile.voidcraft2:void_block.name=Void Block
 
 
 item.voidcraft2:void_ingot.name=Void Ingot
-item.voidcraft2:void_shard=Void Shard
+item.voidcraft2:void_shard.name=Void Shard
+item.voidcraft2:void_stick.name=Void Stick
 
-item.voidcraft2:void_sword.name=Void Sword
-item.voidcraft2:void_pickaxe.name=Void Pickaxe
-item.voidcraft2:void_shovel.name=Void Shovel
-item.voidcraft2:void_axe.name=Void Axe
-item.voidcraft2:void_hoe.name=Void Hoe
+item.void_sword.name=Void Sword
+item.void_pickaxe.name=Void Pickaxe
+item.void_shovel.name=Void Shovel
+item.void_axe.name=Void Axe
+item.void_hoe.name=Void Hoe
+item.void_sickle.name=Void Sickle

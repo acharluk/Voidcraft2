@@ -8,9 +8,9 @@ import com.acharluk.voidcraft2.lib.Names;
 public class VoidBlock extends BlockVC2 {
 
     public VoidBlock() {
-        setBlockName(Names.Blocks.voidBlock);
-        setHardness(1.0F);
-        setResistance(0.5F);
+        this.setBlockName(Names.Blocks.voidBlock);
+        this.setHardness(1.0F);
+        this.setResistance(0.5F);
         BlockVC2.register(this);
     }
 
