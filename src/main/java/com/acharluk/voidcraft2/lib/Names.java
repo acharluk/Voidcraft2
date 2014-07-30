@@ -11,6 +11,7 @@ public class Names {
         public static final String voidBlock = "void_block";
         public static final String voidStairs = "void_stairs";
         public static final String voidSlab = "void_slab";
+        public static final String voidBlockPortal = "void_block_portal";
     }
 
 

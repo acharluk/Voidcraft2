@@ -7,6 +7,8 @@ tile.voidcraft2:void_block.name=Void Block
 tile.void_stairs.name=Void Stairs
 tile.void_slab.name=Void Slab
 
+tile.voidcraft2:void_block_portal.name=Void Portal
+
 
 item.voidcraft2:void_ingot.name=Void Ingot
 item.voidcraft2:void_shard.name=Void Shard

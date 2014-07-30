@@ -9,8 +9,8 @@ import cpw.mods.fml.common.gameevent.PlayerEvent;
 public class VC2Event {
 
     @SubscribeEvent
-    public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
-        //event.player.func_146105_b(new ChatComponentText(event.player.getDisplayName() + " is testing chat messages"));
+    public void checkUpdate(PlayerEvent.PlayerLoggedInEvent event) {
+        //event.player.addChatComponentMessage(IChatComponent.Serializer.func_150699_a("No updates for Voidcraft 2"));
     }
 
 }

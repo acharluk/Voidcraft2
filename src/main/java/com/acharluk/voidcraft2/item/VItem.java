@@ -1,17 +1,11 @@
 package com.acharluk.voidcraft2.item;
 
 import com.acharluk.voidcraft2.VC2;
-import com.acharluk.voidcraft2.fluid.VFluid;
 import com.acharluk.voidcraft2.item.battle.*;
 import com.acharluk.voidcraft2.lib.Names;
-import com.acharluk.voidcraft2.lib.Strings;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
 
 /**
  * Created by ACharLuk on 18/06/2014.

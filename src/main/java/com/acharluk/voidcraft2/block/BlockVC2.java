@@ -2,7 +2,6 @@ package com.acharluk.voidcraft2.block;
 
 import com.acharluk.voidcraft2.VC2;
 import com.acharluk.voidcraft2.lib.Strings;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;

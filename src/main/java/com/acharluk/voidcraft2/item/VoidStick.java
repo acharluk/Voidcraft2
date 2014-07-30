@@ -1,7 +1,5 @@
 package com.acharluk.voidcraft2.item;
 
-import com.acharluk.voidcraft2.lib.Names;
-
 /**
  * Created by ACharLuk on 22/07/2014.
  */
