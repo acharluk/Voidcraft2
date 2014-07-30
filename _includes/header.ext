@@ -1,1 +1,3 @@
-<header><a href="{{ site.baseurl }}"><h1>Apuntes</h1></a></header>
+<header><a href="{{ site.baseurl }}"><h1>Voidcraft 2</h1></a>
+      <a href="https://github.com/acharluk/Voidcraft2/releases/latest" class="btn">Download Voidcraft 2</a>
+</header>
