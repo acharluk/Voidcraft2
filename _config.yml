@@ -4,7 +4,7 @@
 # pygments: true
 
 # Settings
-baseurl: /apuntes
+baseurl: /Voidcraft2
 
 markdown: kramdown
 kramdown:
