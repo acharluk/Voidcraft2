@@ -10,7 +10,7 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.container, header, article, footer {
+.container, header, article, footer, nav {
   width: 90%;
   max-width: 42em;
   margin: 0 auto;
